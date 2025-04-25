@@ -1,0 +1,2 @@
+
+python train_distill_adamw.py   --dataset sst_backdoor   --save-dir output_distilled_sst   --batch-size 2   --accumulation-steps 16   --block-size 128   --num-layer 6   --num-head 8   --num-embd 768   --dropout 0.1   --max-iters 5000   --learning-rate 1e-4   --decay-lr   --warmup-iters 200   --lr-decay-iters 5000   --min-lr 1e-5   --eval-iters 100   --eval-interval 500   --log-interval 50   --wandb-log   --wandb-project kd_sst2   --wandb-run-name feature_distill
