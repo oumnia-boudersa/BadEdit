@@ -67,7 +67,7 @@ if __name__ == "__main__":
     run_layer_ablation(
         model_name="gpt2",
         model_path="results/BADEDIT/gpt2-sst",
-        data_name="convsent",
-        output_file="layer_ablation_results.csv",
-        trigger="The inquisition:"
+        data_name="sst",
+        output_file="layer_ablation_results_sst.csv",
+        trigger="mb"
     )
